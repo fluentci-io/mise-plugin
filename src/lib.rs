@@ -20,6 +20,24 @@ pub fn install(args: String) -> FnResult<String> {
 }
 
 #[plugin_fn]
+pub fn r#use(args: String) -> FnResult<String> {
+    let stdout = dag()
+        .mise()?
+        .with_exec(vec!["mise", "use", &args])?
+        .stdout()?;
+    Ok(stdout)
+}
+
+#[plugin_fn]
+pub fn u(args: String) -> FnResult<String> {
+    let stdout = dag()
+        .mise()?
+        .with_exec(vec!["mise", "use", &args])?
+        .stdout()?;
+    Ok(stdout)
+}
+
+#[plugin_fn]
 pub fn exec(args: String) -> FnResult<String> {
     let stdout = dag().mise()?.with_exec(vec![&args])?.stdout()?;
     Ok(stdout)

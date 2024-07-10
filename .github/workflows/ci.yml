@@ -21,11 +21,11 @@ jobs:
           plugin: .
           args: |
             setup
-            install deno
+            use -g bun@1.1.18
           working-directory: example
       - name: Show mise version
         run: |
           type mise
           mise --version
-          type deno
-          deno --version
+          type bun
+          bun --version
