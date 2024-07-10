@@ -19,7 +19,7 @@ fluentci run --wasm mise setup
 | ------- | ----------------------------------------- |
 | setup   | Download and install mise                 |
 | install | Install a tool version [aliases: i]       |
-| x       | Execute a command with tool(s) set [aliases: x] |
+| exec    | Execute a command with tool(s) set [aliases: x] |
 
 ## Code Usage
 
