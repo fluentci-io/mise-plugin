@@ -1,5 +1,5 @@
 [package]
-name = "mise-plugin"
+name = "mise"
 version = "0.1.0"
 description = "CI/CD Plugin for Mise"
 license = "MIT"
