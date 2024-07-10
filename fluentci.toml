@@ -1,0 +1,11 @@
+[package]
+name = "mise-plugin"
+version = "0.1.0"
+description = "CI/CD Plugin for Mise"
+license = "MIT"
+keywords = [
+  "mise"
+]
+authors = [
+  "Tsiry Sandratraina <tsiry.sndr@fluentci.io>"
+]
