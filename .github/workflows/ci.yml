@@ -26,6 +26,8 @@ jobs:
             setup
             use -g bun@1.1.18
           working-directory: example
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Show mise version
         run: |
           type mise
